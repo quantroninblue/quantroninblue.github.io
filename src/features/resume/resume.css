@@ -1,0 +1,69 @@
+.resume-page { padding-block: 55px 40px; }
+.resume-heading { padding-bottom: 34px; }
+.resume-kicker { color: var(--color-accent); font-size: 9px; }
+.resume-heading h1 { font-family: var(--font-display); font-weight: 600; text-transform: uppercase; font-size: clamp(64px, 9vw, 136px); line-height: .95; letter-spacing: -.02em; margin-block: 26px; }
+.resume-heading h1 span { color: var(--color-accent); }
+.resume-heading h1:focus { outline: none; }
+.resume-heading-bottom { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.resume-heading-bottom > p { color: var(--color-muted); font-size: 16px; line-height: 1.8; }
+.resume-action { display: inline-flex; align-items: center; justify-content: space-between; gap: 25px; min-height: 48px; border: 1px solid var(--line); padding: 12px 18px; text-transform: uppercase; flex-shrink: 0; }
+.resume-action:hover { color: var(--color-accent); border-color: var(--color-accent); }
+.resume-section { border-top: 1px solid var(--line); padding-top: 28px; }
+.resume-section-heading { display: flex; align-items: baseline; gap: 25px; margin-bottom: 22px; }
+.resume-section-heading > span { color: var(--color-accent); font-size: 9px; flex-shrink: 0; }
+.resume-section-heading h2 { font-size: clamp(21px, 2vw, 27px); letter-spacing: -.045em; font-weight: 400; }
+.experience-entry { display: grid; grid-template-columns: minmax(190px, .65fr) minmax(0, 1.6fr); gap: clamp(35px, 6vw, 100px); padding-block: 30px 43px; }
+.experience-entry + .experience-entry { border-top: 1px solid var(--line); }
+.experience-dates { color: var(--color-accent); font-size: 10px; line-height: 1.8; text-transform: uppercase; }
+.experience-organization { margin-top: 20px; font-size: 17px; letter-spacing: -.025em; }
+.experience-context { color: var(--color-muted); font-size: 12px; line-height: 1.9; margin-top: 9px; max-width: 240px; }
+.experience-project { text-transform: uppercase; color: var(--color-muted); font-size: 10px; }
+.experience-detail h3 { font-size: clamp(22px, 2.2vw, 31px); font-weight: 400; line-height: 1.4; letter-spacing: -.04em; margin-block: 12px 22px; }
+.experience-detail ul { display: grid; gap: 16px; }
+.experience-detail li { position: relative; padding-left: 21px; color: var(--color-muted); font-size: 14px; line-height: 1.95; max-width: 830px; }
+.experience-detail li::before { content: ''; position: absolute; left: 0; top: .85em; width: 5px; height: 1px; background: var(--color-accent); }
+.experience-links { display: flex; flex-wrap: wrap; gap: 12px 30px; margin-top: 20px; }
+.experience-links a { display: inline-flex; gap: 12px; align-items: center; font-size: 12px; min-height: 44px; }
+.experience-links svg { color: var(--color-accent); }
+.experience-links a:hover { color: var(--color-accent); }
+.cv-identity { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding-block: 28px 36px; border-top: 1px solid var(--line); }
+.cv-role { font-size: 21px; letter-spacing: -.025em; line-height: 1.5; }
+.cv-specialization { font-size: 14px; color: var(--color-muted); line-height: 1.9; margin-top: 8px; }
+.cv-location { margin-top: 18px; color: var(--color-muted); font-size: 9px; line-height: 1.8; }
+.cv-identity address { display: flex; flex-direction: column; align-items: start; justify-self: end; font-style: normal; font-size: 12px; color: var(--color-muted); }
+.cv-identity address a { min-height: 32px; display: inline-flex; align-items: center; overflow-wrap: anywhere; }
+.cv-identity address a:hover { color: var(--color-accent); }
+.cv-identity address span { line-height: 1.8; padding-block: 6px; }
+.cv-summary { max-width: 950px; color: var(--color-muted); font-size: 16px; line-height: 2; padding-block: 3px 35px; }
+.cv-skills { padding-bottom: 30px; }
+.cv-skills > div { display: grid; grid-template-columns: minmax(190px, .65fr) minmax(0, 1.6fr); gap: clamp(35px, 6vw, 100px); padding-block: 19px; }
+.cv-skills > div + div { border-top: 1px solid var(--line); }
+.cv-skills dt { font-size: 14px; line-height: 1.8; }
+.cv-skills dd { color: var(--color-muted); font-size: 13px; line-height: 1.95; }
+.cv-education article { display: grid; grid-template-columns: minmax(190px, .65fr) minmax(0, 1.6fr); gap: clamp(35px, 6vw, 100px); padding-block: 23px 32px; }
+.cv-education article + article { border-top: 1px solid var(--line); }
+.cv-education h3 { font-size: 23px; letter-spacing: -.035em; }
+.cv-education article div p { color: var(--color-muted); font-size: 13px; line-height: 1.8; margin-top: 8px; }
+.resume-colophon { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--color-muted); font-size: 8px; }
+@media (max-width: 799px) {
+  .resume-page { padding-top: 35px; }
+  .resume-heading-bottom { flex-direction: column; align-items: start; gap: 18px; }
+  .resume-heading-bottom > p { font-size: 14px; }
+  .experience-entry, .cv-identity, .cv-skills > div, .cv-education article { grid-template-columns: 1fr; gap: 18px; }
+  .experience-organization { margin-top: 10px; }
+  .experience-context { max-width: none; margin-top: 5px; }
+  .experience-entry { padding-block: 20px 30px; }
+  .experience-detail li { font-size: 13px; }
+  .cv-identity address { justify-self: start; }
+  .cv-identity { gap: 22px; }
+  .cv-summary { font-size: 14px; }
+  .cv-skills > div { gap: 7px; }
+  .resume-section-heading { gap: 16px; }
+}
+@media print {
+  .site-header, .site-footer, .resume-action, .skip-link { display: none; }
+  .resume-page { color: #000; padding: 0; }
+  .resume-page p, .resume-page li, .resume-page dd, .resume-page a, .resume-page span { color: #222; }
+  .resume-heading h1 { font-size: 48px; }
+  .experience-entry, .cv-education article, .cv-skills > div { break-inside: avoid; }
+}
