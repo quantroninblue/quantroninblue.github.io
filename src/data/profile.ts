@@ -43,4 +43,14 @@ export const selectedWork = [
     href: `${githubUrl}/Hephaestus`,
     action: 'View source',
   },
+  {
+    number: '04',
+    name: 'Furnace',
+    field: 'AI developer tools',
+    description: 'An open-source AI coding workspace on Code OSS: every model in one conversation, local models for the small jobs, checkpoints, and plans that prove each step.',
+    technologies: 'TypeScript / Electron / Code OSS',
+    // Not in the CV yet: the project's own landing page.
+    href: 'https://quantroninblue.github.io/Furnace/',
+    action: 'Visit site',
+  },
 ] as const

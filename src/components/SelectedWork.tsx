@@ -6,7 +6,7 @@ export function SelectedWork() {
     <section className="selected-work" id="projects" aria-labelledby="work-title">
       <div className="section-heading">
         <div className="flex items-baseline gap-5"><span className="mono section-index">01 /</span><h2 id="work-title">Selected work</h2></div>
-        <span className="mono section-caption">THREE DOMAINS. END-TO-END SYSTEMS.</span>
+        <span className="mono section-caption">FOUR DOMAINS. END-TO-END SYSTEMS.</span>
       </div>
       <div className="work-grid">
         {selectedWork.map((work) => (

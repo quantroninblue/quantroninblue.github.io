@@ -41,12 +41,12 @@
 .calendar-scroll { overflow-x: auto; scrollbar-color: var(--line) var(--color-canvas); scrollbar-width: thin; padding-block: 6px 14px; }
 .calendar-grid { display: grid; width: max-content; grid-template-rows: 30px repeat(7, 24px); margin-right: 12px; }
 .calendar-cell { width: 24px; height: 24px; padding: 4px; border: 0; }
-.calendar-cell > span, .legend-cell { display: block; width: 16px; height: 16px; border: 1px solid #45463c; background: #24261f; border-radius: 2px; }
-.calendar-cell[data-level='1'] > span, .legend-cell[data-level='1'] { background: #564837; border-color: #716049; }
-.calendar-cell[data-level='2'] > span, .legend-cell[data-level='2'] { background: #82694b; border-color: #a07d57; }
-.calendar-cell[data-level='3'] > span, .legend-cell[data-level='3'] { background: #ae875f; border-color: #c8986e; }
-.calendar-cell[data-level='4'] > span, .legend-cell[data-level='4'] { background: #e4b58c; border-color: #e4b58c; }
-.calendar-cell[data-unknown='true'] > span { background: repeating-linear-gradient(135deg, #24261f, #24261f 3px, #45463c 3px, #45463c 4px); }
+.calendar-cell > span, .legend-cell { display: block; width: 16px; height: 16px; border: 1px solid #24313a; background: #111a20; border-radius: 2px; }
+.calendar-cell[data-level='1'] > span, .legend-cell[data-level='1'] { background: #0f3b2c; border-color: #145c43; }
+.calendar-cell[data-level='2'] > span, .legend-cell[data-level='2'] { background: #157a52; border-color: #1c9965; }
+.calendar-cell[data-level='3'] > span, .legend-cell[data-level='3'] { background: #23b878; border-color: #2fd08c; }
+.calendar-cell[data-level='4'] > span, .legend-cell[data-level='4'] { background: #3fe0a0; border-color: #3fe0a0; }
+.calendar-cell[data-unknown='true'] > span { background: repeating-linear-gradient(135deg, #111a20, #111a20 3px, #24313a 3px, #24313a 4px); }
 .calendar-cell:hover > span { border-color: var(--color-ink); }
 .calendar-cell:focus-visible { outline-offset: 0; }
 .calendar-month-label { color: var(--color-muted); font-size: 10px; overflow: visible; white-space: nowrap; padding-left: 4px; }

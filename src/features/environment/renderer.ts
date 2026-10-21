@@ -65,7 +65,7 @@ export function createEnvironment(canvas: HTMLCanvasElement) {
     for (let row = 0; row <= rows; row += step) {
       const band = mode === 'github' ? Math.pow(Math.max(0, Math.cos(row * .25 - time * 2)), 12) * .12 : 0
       const fade = Math.sin(Math.PI * (row + 1) / (rows + 2))
-      ctx.strokeStyle = `rgba(215,165,128,${(current.opacity + band) * fade * (mobile ? .8 : 1)})`
+      ctx.strokeStyle = `rgba(78,168,255,${(current.opacity + band) * fade * (mobile ? .8 : 1)})`
       ctx.beginPath()
       for (let col = 0; col <= columns; col += step) {
         const i = row * (columns + 1) + col
@@ -73,7 +73,7 @@ export function createEnvironment(canvas: HTMLCanvasElement) {
       }
       ctx.stroke()
     }
-    ctx.strokeStyle = `rgba(166,167,158,${current.opacity * .55})`
+    ctx.strokeStyle = `rgba(147,163,173,${current.opacity * .55})`
     for (let col = 0; col <= columns; col += step) {
       ctx.beginPath()
       for (let row = 0; row <= rows; row += step) {
