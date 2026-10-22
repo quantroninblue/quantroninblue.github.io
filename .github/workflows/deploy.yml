@@ -3,6 +3,9 @@ name: Deploy portfolio to GitHub Pages
 on:
   push:
     branches: [main]
+  # Pull requests run the checks and build (main requires them); only main deploys.
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
