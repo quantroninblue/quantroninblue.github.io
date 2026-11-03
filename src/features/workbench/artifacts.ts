@@ -10,23 +10,23 @@ export type Artifact = {
 // Visual studies explain ideas; they are not captured project output.
 export const artifacts: Artifact[] = [
   {
-    id: 'assembly', index: '01', name: 'An idea, assembled.', project: 'Hephaestus AI', kind: 'ASSEMBLY STUDY',
+    id: 'navigation', index: '01', name: 'When the plan breaks.', project: 'Argus', kind: 'NAVIGATION STUDY',
+    summary: 'I built Argus to drive robots it was never written for. You describe a body once, the hub maps and plans, and Argo keeps the robot safe on board, even when the link to the hub drops.',
+    href: `${githubUrl}/Argus`, technologies: 'C++ · Python · ROS 2 · gRPC · Gazebo',
+    sections: [
+      { label: 'Describe', title: 'Start from the body.', text: 'Argus reads a robot\'s URDF and works out what that body can do: stopping distances, sensor coverage, and blind spots. Those limits bound every command. The map above is a simplified illustration, not captured output.' },
+      { label: 'Plan', title: 'Split the thinking from the reflexes.', text: 'The hub keeps one map per site and plans routes, and only ever sends waypoints. Argo turns them into motion on the robot, and its safety supervisor can only slow or stop it.' },
+      { label: 'Recover', title: 'Trust the map over the wheels.', text: 'Odometry drifts, so the hub matches what a robot sees against surfaces it already knows, and solves a pose graph when a robot returns somewhere it has been. In Gazebo, each failed run is diagnosed as the design, Argus, or the world.' },
+    ],
+  },
+  {
+    id: 'assembly', index: '02', name: 'An idea, assembled.', project: 'Hephaestus AI', kind: 'ASSEMBLY STUDY',
     summary: 'I built Hephaestus to connect natural-language design with editable CAD, simulation, and ROS 2. The useful part is being able to inspect what happens between the request and the robot.',
     href: `${githubUrl}/Hephaestus`, technologies: 'Python · CadQuery · ROS 2 · Gazebo',
     sections: [
       { label: 'Design', title: 'Keep the geometry editable.', text: 'Hephaestus generates CadQuery source and STEP/STL artifacts. The design remains code that can be inspected and changed, rather than a closed result. Separate the assembly above to inspect its parts.' },
       { label: 'Validate', title: 'A tool call needs boundaries.', text: 'The orchestration runtime uses typed tools, workspace-constrained atomic edits, human approval gates, and deterministic validation. Bounded subprocesses and session cleanup are part of the design.' },
       { label: 'Simulate', title: 'The model has to connect to something.', text: 'The differential-drive workflow spans URDF/Xacro, SDF, ROS–Gazebo bridges, sensors, controllers, and velocity-command motion in simulation. This drawing is an explanatory assembly, not an exported CAD model.' },
-    ],
-  },
-  {
-    id: 'navigation', index: '02', name: 'When the plan breaks.', project: 'Odysseus', kind: 'NAVIGATION STUDY',
-    summary: 'I built Odysseus around perception, planning, and recovery. Its spatial memory records hazardous regions and useful corridors, so a failed attempt can change the next decision.',
-    href: `${githubUrl}/Odysseus`, technologies: 'ROS 2 · Python / C++ · PyTorch · Computer vision',
-    sections: [
-      { label: 'Observe', title: 'Start with an uncertain world.', text: 'Semantic segmentation, depth-aware estimation, Kalman tracking, and probabilistic localization turn observations into useful spatial estimates. The map above is a simplified illustration of that problem.' },
-      { label: 'Plan', title: 'Consider more than one way forward.', text: 'The local planner evaluates 63 candidate rollouts per control cycle against collision risk, clearance, heading alignment, and goal progress. A deterministic safety override remains outside the learned model.' },
-      { label: 'Recover', title: 'Remember why an attempt failed.', text: 'A PyTorch causal reasoning model distinguishes 11 failure and success causes, with confidence guiding targeted recovery. Persistent spatial memory records hazards and reliable corridors for subsequent decisions.' },
     ],
   },
   {

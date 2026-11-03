@@ -36,7 +36,7 @@ export function App() {
   }, [hash, page])
   useEffect(() => {
     const label = page === 'home' ? 'AI / ML Engineer' : page === 'cv' ? 'CV' : page === 'experience' ? 'Experience' : 'GitHub'
-    document.title = `Abhroneel Mukherjee — ${label}`
+    document.title = `Abhroneel Mukherjee | ${label}`
   }, [page])
 
   return (

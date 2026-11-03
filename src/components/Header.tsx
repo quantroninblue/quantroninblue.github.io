@@ -32,7 +32,7 @@ export function Header({ activePage }: { activePage: 'home' | 'github' | 'experi
 
   return (
     <header className="site-header shell" ref={header}>
-      <a className="brand" href="#home" aria-label="Abhroneel Mukherjee — Home">
+      <a className="brand" href="#home" aria-label="Abhroneel Mukherjee | Home">
         <span className="brand-mark" aria-hidden="true">a<span>m</span><i>.</i></span>
         <span className="brand-caption">ABHRONEEL MUKHERJEE<span>APPLIED AI & ENGINEERING</span></span>
       </a>

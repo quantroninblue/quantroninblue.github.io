@@ -40,7 +40,7 @@ function Navigation({ amount }: { amount: number }) {
     <polyline className="drawing-highlight navigation-trace" points={traveled} />
     <g transform={`translate(${x} ${y})`}><circle r="25" className="drawing-construction" strokeDasharray="2 5" /><path d="m0-10 7 17-7-4-7 4Z" className="drawing-highlight" /></g>
     <path d="M387 49h12v12h-12Z" className="drawing-highlight" />
-    <g className="drawing-annotation"><text x="45" y="278">LOCAL MAP / RECOVERY STUDY</text><text x="305" y="27">GOAL</text></g>
+    <g className="drawing-annotation"><text x="45" y="278">SITE MAP / ROUTE STUDY</text><text x="305" y="27">GOAL</text></g>
   </svg>
 }
 

@@ -2,10 +2,10 @@
 // or claims of currently ongoing research. Keep the context alongside each prompt.
 export const fieldNotes = [
   {
-    number: '01', title: 'What should survive a failed attempt?', tag: 'ODYSSEUS / MEMORY',
-    teaser: 'A navigation problem that becomes a memory problem.',
-    paragraph: 'Odysseus connects failure reasoning to persistent spatial memory: hazardous regions, reliable corridors, and recovery choices. The interesting question extends beyond finding another path.',
-    question: 'Which parts of a failure are useful the next time around?',
+    number: '01', title: 'When is a place the same place?', tag: 'ARGUS / LOOP CLOSURE',
+    teaser: 'A navigation problem that becomes a trust problem.',
+    paragraph: 'Argus corrects drift by recognising where a robot has been. A wrong match bends the map for every robot on the site, so a match has to pass several independent checks before the map changes.',
+    question: 'How sure should a system be before it rewrites what it knows?',
   },
   {
     number: '02', title: 'Where does the agent stop?', tag: 'HEPHAESTUS / BOUNDARIES',

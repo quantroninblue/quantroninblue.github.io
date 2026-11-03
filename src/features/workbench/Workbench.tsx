@@ -8,7 +8,7 @@ import { githubUrl } from '../../data/profile'
 const controlLabels: Record<ArtifactId, string> = { assembly: 'Assembly separation', navigation: 'Trace position', surface: 'Surface roughness' }
 
 export function Workbench() {
-  const [selected, setSelected] = useState<ArtifactId>('assembly')
+  const [selected, setSelected] = useState<ArtifactId>('navigation')
   const [amounts, setAmounts] = useState<Record<ArtifactId, number>>({ assembly: 35, navigation: 45, surface: 45 })
   const [seed, setSeed] = useState(1)
   const [steps, setSteps] = useState<Record<ArtifactId, number>>({ assembly: 0, navigation: 0, surface: 0 })

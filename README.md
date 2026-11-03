@@ -1,4 +1,4 @@
-# Abhroneel Mukherjee — Portfolio
+# Abhroneel Mukherjee: Portfolio
 
 A professional portfolio with Home, Experience, CV, and a live public GitHub dashboard at
 `quantroninblue.github.io`. Home's professional copy comes from `public/cv.pdf` and verified public project READMEs;
@@ -70,10 +70,10 @@ engine. These are visual states, not live machine or GitHub telemetry.
 
 The new Workbench replaces the former domain diagram with three project objects:
 
+- **Argus navigation:** a scrub-controlled illustrative route and notes on
+  describing a body, planning across hub and robot, and correcting drift.
 - **Hephaestus assembly:** an adjustable exploded drawing, with design,
   validation, and simulation notes from the CV and public project.
-- **Odysseus navigation:** a scrub-controlled illustrative route and notes on
-  perception, candidate planning, failure reasoning, and spatial memory.
 - **Procedural volatility:** a deterministic layered-noise surface with a
   roughness control and seed changes, linked to the public terrain-inspired
   volatility generator and related Vol Engine work.
@@ -89,7 +89,7 @@ three editable notebook prompts grounded in those projects. They are not
 attributed personal quotes or claims of new research. No dependencies were added.
 
 Project sources: [Hephaestus](https://github.com/quantroninblue/Hephaestus),
-[Odysseus](https://github.com/quantroninblue/Odysseus),
+[Argus](https://github.com/quantroninblue/Argus),
 [procedural volatility](https://github.com/quantroninblue/minecraft-vol-surface-generator),
 and [Vol Engine](https://github.com/quantroninblue/vol_engine).
 

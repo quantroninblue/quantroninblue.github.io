@@ -22,7 +22,7 @@ export default function GitHubPage() {
     const failed = [github.profile, github.repositories, github.activity].some(resource => resource.getSnapshot().error)
     setCheckMessage(failed ? 'Some data could not be refreshed. See the status messages below.' : 'Checked. Fresh data is available; cached results are reused until the next refresh window.')
   }
-  useEffect(() => { document.title = 'GitHub activity — Abhroneel Mukherjee'; return () => { document.title = 'Abhroneel Mukherjee — AI / ML Engineer' } }, [])
+  useEffect(() => { document.title = 'GitHub activity | Abhroneel Mukherjee'; return () => { document.title = 'Abhroneel Mukherjee | AI / ML Engineer' } }, [])
 
   return <div className="github-page">
     <div className="github-breadcrumb mono"><a href="#home"><ArrowLeft size={14} aria-hidden="true" />BACK TO HOME</a><span>PUBLIC ENGINEERING / GITHUB</span></div>
