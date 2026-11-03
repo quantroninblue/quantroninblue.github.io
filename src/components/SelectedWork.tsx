@@ -15,7 +15,7 @@ export function SelectedWork() {
             <h3>{work.name}</h3>
             <p className="work-description">{work.description}</p>
             <p className="work-tech mono">{work.technologies}</p>
-            <a href={work.href} target={work.href.startsWith('#') ? undefined : '_blank'} rel={work.href.startsWith('#') ? undefined : 'noopener noreferrer'} className="work-link mono" aria-label={`${work.name} — ${work.action}${work.href.startsWith('#') ? '' : ' (opens in a new tab)'}`}>
+            <a href={work.href} target={work.href.startsWith('#') ? undefined : '_blank'} rel={work.href.startsWith('#') ? undefined : 'noopener noreferrer'} className="work-link mono" aria-label={`${work.name}: ${work.action}${work.href.startsWith('#') ? '' : ' (opens in a new tab)'}`}>
               {work.action}<ArrowUpRight size={18} strokeWidth={1.5} aria-hidden="true" />
             </a>
           </article>

@@ -51,7 +51,7 @@ export function CommitCalendar({ activity }: { activity: CommitActivity }) {
       <div className="activity-metrics">
         <div><strong>{!activity.complete && <span>≥ </span>}{summary.total.toLocaleString()}</strong><span>{activity.complete ? 'Indexed public commits' : 'Public commits found'}</span></div>
         <div><strong>{!activity.complete && <span>≥ </span>}{summary.activeDays}<small> / {period}</small></strong><span>Days with commits</span></div>
-        <div><strong>{!activity.complete && <span>≥ </span>}{summary.lastWeek}<small> last 7 days</small></strong><span>{activity.complete ? `${summary.difference > 0 ? '+' : ''}${summary.difference} vs. previous 7 days` : 'Trend unavailable — partial results'}</span></div>
+        <div><strong>{!activity.complete && <span>≥ </span>}{summary.lastWeek}<small> last 7 days</small></strong><span>{activity.complete ? `${summary.difference > 0 ? '+' : ''}${summary.difference} vs. previous 7 days` : 'Trend unavailable: partial results'}</span></div>
       </div>
       {!activity.complete && <p className="github-notice" role="status">Partial results. GitHub search can return at most 1,000 matches and may time out. Counts are lower bounds; unfilled days mean unavailable data, not zero activity.</p>}
       <div ref={scroll} className={`calendar-scroll ${period === 30 ? 'calendar-month' : ''}`} role="region" aria-label="Scrollable commit calendar" tabIndex={0}>
@@ -75,7 +75,7 @@ export function CommitCalendar({ activity }: { activity: CommitActivity }) {
         <p className="calendar-readout" aria-live="polite" aria-atomic="true"><span className="mono">{shortDate.format(new Date(`${current.date}T00:00:00Z`))}</span>{!activity.complete && current.count === 0 ? 'Activity unavailable' : `${prefix}${current.count} public ${current.count === 1 ? 'commit' : 'commits'}`}</p>
         <div className="calendar-legend" aria-label="Commit intensity: 0, 1 to 2, 3 to 5, 6 to 9, 10 or more commits"><span className="mono">{activity.complete ? '0' : '?'}</span>{[0, 1, 2, 3, 4].map(level => <span className="legend-cell" data-level={level} key={level} title={['0', '1–2', '3–5', '6–9', '10+'][level]} aria-hidden="true" />)}<span className="mono">10+</span></div>
       </div>
-      <p className="github-caption" id="calendar-instructions">{days[0].date} — {days.at(-1)!.date} · UTC · Sunday–Saturday, top to bottom. Hover, tap, or use arrow keys to explore; scroll to see earlier weeks.</p>
+      <p className="github-caption" id="calendar-instructions">{days[0].date} to {days.at(-1)!.date} · UTC · Sunday–Saturday, top to bottom. Hover, tap, or use arrow keys to explore; scroll to see earlier weeks.</p>
       <p className="github-caption calendar-scope">Commits indexed by GitHub search, attributed to this account. Shared commit hashes count once. This calendar excludes issues and reviews and is not GitHub’s full contribution total.</p>
       {summary.total === 0 && activity.complete && <p className="github-empty">No indexed public commits found in this period.</p>}
     </div>

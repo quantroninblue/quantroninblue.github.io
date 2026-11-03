@@ -8,7 +8,7 @@ export const profile = {
   email: 'abhro00@gmail.com',
   githubUsername: 'quantroninblue',
   statement:
-    'I build end-to-end intelligent systems across quantitative finance and autonomous robotics — connecting machine learning research with practical engineering.',
+    'I build end-to-end intelligent systems across quantitative finance and autonomous robotics, connecting machine learning research with practical engineering.',
   cvUrl: `${import.meta.env.BASE_URL}cv.pdf`,
 } as const
 
@@ -17,40 +17,38 @@ export const githubUrl = `https://github.com/${profile.githubUsername}`
 export const selectedWork = [
   {
     number: '01',
+    name: 'Argus',
+    field: 'Autonomous robotics',
+    description: 'Navigation for robots it was not written for: describe a body once, and a hub maps and plans while Argo keeps each robot safe on board. Validated in simulation and Gazebo.',
+    technologies: 'C++ / Python / ROS 2 / gRPC',
+    href: `${githubUrl}/Argus`,
+    action: 'View source',
+  },
+  {
+    number: '02',
+    name: 'Furnace',
+    field: 'AI developer tools',
+    description: 'An open-source AI coding workspace on Code OSS: every model in one conversation, local models for the small jobs, checkpoints, and plans that prove each step.',
+    technologies: 'TypeScript / Electron / Code OSS',
+    href: 'https://quantroninblue.github.io/Furnace/',
+    action: 'Visit site',
+  },
+  {
+    number: '03',
+    name: 'Mercury',
+    field: 'AI agents',
+    description: 'One self-learning agent across your devices: message it from WhatsApp, the command line or an API, and it runs tasks on your paired machines with approvals. Built on Hermes Agent.',
+    technologies: 'Python / WebSockets / Agents',
+    href: `${githubUrl}/mercury`,
+    action: 'View source',
+  },
+  {
+    number: '04',
     name: 'Vol Engine',
     field: 'Quantitative intelligence',
     description: 'A quantitative ML research system for SPX options decisions, from volatility forecasting to risk-aware portfolio construction.',
     technologies: 'XGBoost / PyTorch / Python',
     href: '#cv',
     action: 'Read in CV',
-  },
-  {
-    number: '02',
-    name: 'Odysseus',
-    field: 'Autonomous robotics',
-    description: 'Adaptive navigation with causal failure reasoning, targeted recovery, and persistent spatial memory.',
-    technologies: 'ROS 2 / C++ / Gazebo',
-    href: '#cv',
-    action: 'Read in CV',
-  },
-  {
-    number: '03',
-    name: 'Hephaestus AI',
-    field: 'LLM systems',
-    description: 'An open-source robotics workbench connecting natural-language design with editable CAD, simulation, and ROS 2.',
-    technologies: 'Python / CadQuery / ROS 2',
-    // This project URL is explicitly supplied in the CV, not inferred from a title.
-    href: `${githubUrl}/Hephaestus`,
-    action: 'View source',
-  },
-  {
-    number: '04',
-    name: 'Furnace',
-    field: 'AI developer tools',
-    description: 'An open-source AI coding workspace on Code OSS: every model in one conversation, local models for the small jobs, checkpoints, and plans that prove each step.',
-    technologies: 'TypeScript / Electron / Code OSS',
-    // Not in the CV yet: the project's own landing page.
-    href: 'https://quantroninblue.github.io/Furnace/',
-    action: 'Visit site',
   },
 ] as const

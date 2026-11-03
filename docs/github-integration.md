@@ -9,12 +9,12 @@ the footer and dashboard profile links still open the actual GitHub profile.
 
 ```text
 GitHub public REST API
-  → client.ts (anonymous requests, timeout, rate-limit cooldowns)
-  → normalize.ts (allowlisted fields, public-only filtering, safe URLs)
-  → service.ts (pagination, aggregate snapshots, metadata resources)
-  → resource.ts (memory/localStorage cache, shared requests, subscriptions)
-  → useGitHub.ts (visible-page refresh, reconnection, lifecycle)
-  → dashboard components
+  -> client.ts (anonymous requests, timeout, rate-limit cooldowns)
+  -> normalize.ts (allowlisted fields, public-only filtering, safe URLs)
+  -> service.ts (pagination, aggregate snapshots, metadata resources)
+  -> resource.ts (memory/localStorage cache, shared requests, subscriptions)
+  -> useGitHub.ts (visible-page refresh, reconnection, lifecycle)
+  -> dashboard components
 ```
 
 `profile.githubUsername` remains the sole account configuration. Components
